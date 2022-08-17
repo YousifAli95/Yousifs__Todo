@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>To Do</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-box">
+        <div class="svg-container">
+          <div class="current-list-box">
+            <span class="current-span"></span>
+          </div>
+          <svg
+            version="1.1"
+            id="folder"
+            onclick="loadFunction()"
+            x="0px"
+            y="0px"
+            viewBox="0 0 347.479 347.479"
+            style="enable-background: new 0 0 347.479 347.479"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                style="fill: #e0b03b"
+                d="M292.251,79.766H103.644v-8.544c0-5.974-4.888-10.862-10.862-10.862H30.414
+		c-5.975,0-10.862,4.888-10.862,10.862v8.544h-3.258C7.332,79.766,0,87.098,0,96.059v174.766c0,8.961,7.332,16.293,16.293,16.293
+		h275.958c8.961,0,16.293-7.332,16.293-16.293V96.059C308.545,87.098,301.213,79.766,292.251,79.766z"
+              />
+              <rect
+                x="23.243"
+                y="95.385"
+                style="fill: #ffffff"
+                width="262.059"
+                height="176.113"
+              />
+              <path
+                style="fill: #ffc843"
+                d="M312.426,271.293c-2.135,8.704-11.213,15.825-20.175,15.825H16.293
+		c-8.961,0-14.547-7.121-12.412-15.825l34.598-141.05c2.135-8.704,11.213-15.825,20.175-15.825h275.958
+		c8.961,0,14.547,7.121,12.412,15.825L312.426,271.293z"
+              />
+            </g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </svg>
+
+          <svg
+            version="1.1"
+            id="save"
+            x="0px"
+            y="0px"
+            viewBox="0 0 512 512"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            tabindex="1"
+          >
+            <polygon
+              style="fill: #ffcd00"
+              points="512,222.609 478.609,222.609 478.609,189.217 422.957,189.217 422.957,222.609 
+  389.565,222.609 389.565,256 356.174,256 356.174,289.391 322.783,289.391 322.783,322.783 289.391,322.783 289.391,356.174 
+  256,356.174 256,389.565 222.609,389.565 222.609,422.957 189.217,422.957 189.217,512 278.261,512 278.261,478.609 
+  311.652,478.609 311.652,445.217 345.043,445.217 345.043,411.826 378.435,411.826 378.435,378.435 411.826,378.435 
+  411.826,345.043 445.217,345.043 445.217,311.652 478.609,311.652 478.609,278.261 512,278.261 "
+            />
+            <rect
+              x="189.217"
+              y="422.957"
+              style="fill: #ffeb99"
+              width="89.043"
+              height="89.043"
+            />
+            <g>
+              <polygon
+                style="fill: #005ece"
+                points="478.609,222.609 478.609,189.217 422.957,189.217 422.957,256 445.217,256 445.217,278.261 
+    512,278.261 512,222.609   "
+              />
+              <polygon
+                style="fill: #005ece"
+                points="389.565,66.785 389.565,33.391 356.174,33.391 356.174,0 0,0 0,0 0,0 0,422.959 
+    122.434,422.959 122.435,422.957 189.219,422.957 189.217,389.565 222.609,389.565 222.609,356.174 256,356.174 256,322.783 
+    289.391,322.783 289.391,289.391 322.783,289.391 322.783,256 356.174,256 356.174,222.609 389.565,222.609 389.565,189.22 
+    422.957,189.22 422.957,66.785   "
+              />
+            </g>
+            <g>
+              <rect
+                x="89.042"
+                style="fill: #bddbff"
+                width="233.739"
+                height="133.565"
+              />
+              <polygon
+                style="fill: #bddbff"
+                points="322.783,200.348 89.042,200.348 89.042,422.957 189.219,422.957 189.217,389.565 
+    222.609,389.565 222.609,356.174 256,356.174 256,322.783 289.391,322.783 289.391,289.391 322.783,289.391   "
+              />
+            </g>
+            <path
+              d="M0,0v422.957h155.827v-33.391h-33.394V233.739h166.959V256h33.391v-55.652H89.042v189.217H33.391V33.391h55.65v100.174
+  h233.741v-33.391l0,0V33.391h33.391V0H0z M289.391,100.174H122.434V33.391h166.958V100.174z"
+            />
+            <polygon
+              points="389.565,66.783 389.565,33.391 356.174,33.391 356.174,66.783 389.565,66.783 389.565,155.826 422.957,155.826 
+  422.957,66.783 "
+            />
+            <polygon
+              points="222.609,422.957 189.217,422.957 189.217,512 278.261,512 278.261,478.609 222.609,478.609 "
+            />
+            <rect x="222.609" y="389.565" width="33.391" height="33.391" />
+            <rect x="256" y="356.174" width="33.391" height="33.391" />
+            <rect x="289.391" y="322.783" width="33.391" height="33.391" />
+            <rect x="322.783" y="289.391" width="33.391" height="33.391" />
+            <rect x="356.174" y="256" width="33.391" height="33.391" />
+            <rect x="389.565" y="222.609" width="33.391" height="33.391" />
+            <rect x="422.957" y="189.217" width="55.652" height="33.391" />
+            <rect x="278.261" y="445.217" width="33.391" height="33.391" />
+            <rect x="311.652" y="411.826" width="33.391" height="33.391" />
+            <rect x="345.043" y="378.435" width="33.391" height="33.391" />
+            <rect x="378.435" y="345.043" width="33.391" height="33.391" />
+            <rect x="411.826" y="311.652" width="33.391" height="33.391" />
+            <rect x="445.217" y="278.261" width="33.391" height="33.391" />
+            <rect x="478.609" y="222.609" width="33.391" height="55.652" />
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </svg>
+        </div>
+        <div class="load-row">
+          <select
+            onchange="selectFunction(value)"
+            style="width: 20rem"
+            name="lists"
+            id="savedLists"
+          >
+            <option value="">Choose a list to load</option>
+          </select>
+          <svg
+            onclick="noLoadFunction()"
+            id="back-arrow-save"
+            x="0px"
+            y="0px"
+            viewBox="0 0 299.021 299.021"
+            style="
+              enable-background: new 0 0 299.021 299.021;
+              height: 2rem;
+              bottom: 0rem;
+            "
+            xml:space="preserve"
+          >
+            <g>
+              <g>
+                <path
+                  d="M292.866,254.432c-2.288,0-4.443-1.285-5.5-3.399c-0.354-0.684-28.541-52.949-146.169-54.727v51.977
+			c0,2.342-1.333,4.48-3.432,5.513c-2.096,1.033-4.594,0.793-6.461-0.63L2.417,154.392C0.898,153.227,0,151.425,0,149.516
+			c0-1.919,0.898-3.72,2.417-4.888l128.893-98.77c1.87-1.426,4.365-1.667,6.461-0.639c2.099,1.026,3.432,3.173,3.432,5.509v54.776
+			c3.111-0.198,7.164-0.37,11.947-0.37c43.861,0,145.871,13.952,145.871,143.136c0,2.858-1.964,5.344-4.75,5.993
+			C293.802,254.384,293.34,254.432,292.866,254.432z"
+                />
+              </g>
+            </g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </svg>
+        </div>
+        <div class="margin-div">
+          <div id="clear-list" class="clear">
+            <span class="span-clear">Remove selected list</span>
+          </div>
+        </div>
+        <div class="save-row">
+          <input
+            type="text"
+            placeholder="E.g bucket list"
+            class="input-item"
+            id="save-input-box"
+          />
+          <button
+            onclick=""
+            id="save-submit-button"
+            class="submit-button"
+            type="submit"
+          >
+            Save List
+          </button>
+          <svg
+            onclick="noSaveFunction()"
+            id="back-arrow-save"
+            x="0px"
+            y="0px"
+            viewBox="0 0 299.021 299.021"
+            style="enable-background: new 0 0 299.021 299.021"
+            xml:space="preserve"
+          >
+            <g>
+              <g>
+                <path
+                  d="M292.866,254.432c-2.288,0-4.443-1.285-5.5-3.399c-0.354-0.684-28.541-52.949-146.169-54.727v51.977
+			c0,2.342-1.333,4.48-3.432,5.513c-2.096,1.033-4.594,0.793-6.461-0.63L2.417,154.392C0.898,153.227,0,151.425,0,149.516
+			c0-1.919,0.898-3.72,2.417-4.888l128.893-98.77c1.87-1.426,4.365-1.667,6.461-0.639c2.099,1.026,3.432,3.173,3.432,5.509v54.776
+			c3.111-0.198,7.164-0.37,11.947-0.37c43.861,0,145.871,13.952,145.871,143.136c0,2.858-1.964,5.344-4.75,5.993
+			C293.802,254.384,293.34,254.432,292.866,254.432z"
+                />
+              </g>
+            </g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </svg>
+        </div>
+        <h1>What do you need to do?</h1>
+        <div class="action-bar">
+          <span class="action-bar-span"></span>
+        </div>
+
+        <div class="flikar">
+          <div onclick="flikFunction(this, 0)" id="all">All items</div>
+          <div onclick="flikFunction(this, 1)" id="non-checked-items">
+            Left to do
+          </div>
+          <div onclick="flikFunction(this, 2)" id="checked-items">Done</div>
+        </div>
+        <div id="input-row">
+          <input
+            type="text"
+            placeholder="e.g. Do laundry"
+            class="input-item"
+            id="input-box"
+          />
+          <button
+            onclick=""
+            id="main-submit-button"
+            class="submit-button"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="div-list">
+          <ul class="ul-list"></ul>
+        </div>
+        <div id="clear-bottom" class="clear">
+          <span class="span-clear">Clear items</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
